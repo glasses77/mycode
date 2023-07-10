@@ -1,17 +1,19 @@
+# variables.tf
 variable "container_name" {
-  description = "name"
-  type = string
-  default = "AltaResearchWebService"
+  description = "Value of the name for the Docker container"
+  type        = string
+  default     = "ExampleNginxContainer"
 }
 
 variable "internal_port" {
-  description = "port"
-  type = number
-  default = 9876
+  description = "Internal port of the container"
+  type        = number
+  default     = 80
 }
 
 variable "external_port" {
-  description = "port ext"
-  type = number
-  default = 5432
+  description = "External port on the container"
+  type        = number
+  default     = 2224
 }
+
